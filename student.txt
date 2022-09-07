@@ -1,0 +1,3 @@
+student name: Mohamed Dinle
+student number: 700152
+student class: INF1C 
