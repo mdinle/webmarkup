@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+@font-face {
+    font-family: "Ostrich";
+    src: url(Ostrich_sans/OstrichSans-Medium.otf);
+  }
+
+h1 {
+    font-family: "Lucida Console", "Courier New";
+    size: 32px;
+    color: #FF0000;
+    font-style: oblique;
+}
+
+p {
+    font-family: 'Cedarville Cursive', cursive;
+    size: 10vw;
+    color: #0000FF;
+    font-variant: small-caps;
+}
+
+footer {
+    font-family: "Ostrich";
+    size: 1.6vw;
+    color: #FFC0CB;
+    font-stretch: expanded;
+}
