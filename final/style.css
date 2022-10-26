@@ -1,0 +1,48 @@
+header{
+    border: 2px;
+    border-style: solid;
+    border-color: blue;
+}
+nav{
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+section{
+    display: block;
+    border: 2px;
+    border-style: solid;
+    border-color: red;
+}
+article{
+    border: 2px;
+    border-style: solid;
+    border-color: green;
+}
+aside{
+    border: 2px;
+    border-style: solid;
+    border-color: aqua;
+    
+}
+footer{
+    border: 2px;
+    border-style: solid;
+    border-color: goldenrod;
+}
+.main-section{
+    display: flex;
+    justify-content: space-between;
+
+}
+.second-section{
+    display: block;
+    max-width: min-content;
+}
+.cookies{
+    position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
