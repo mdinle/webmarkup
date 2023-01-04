@@ -37,9 +37,16 @@ a:active {
 .main-home {
   display: flex;
   background-color: #ff5733;
-  flex-basis: 30%;
 }
 
+.artical-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-home {
+  max-width: 33%;
+}
 
 .nav-pc {
   display: block;
@@ -114,17 +121,17 @@ video {
   grid-column: 1/2;
 }
 
-.aside1 > figure > img {
+.aside1 > figure > a > img {
   width: 300px;
   height: 200px;
 }
 
-.aside2 > figure > img {
+.aside2 > figure > a > img {
   width: 300px;
   height: 200px;
 }
 
-.aside3 > figure > img {
+.aside3 > figure > a > img {
   width: 300px;
   height: 200px;
 }
@@ -132,7 +139,6 @@ video {
 .main-pricing {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   background-color: #f933ff;
 }
 .table-pricing {
@@ -161,12 +167,12 @@ tr:nth-child(even) {
   flex-direction: column;
 }
 
-.aside-pricing > figure > img {
+.aside-pricing > figure > a > img {
   width: 200px;
   height: 200px;
 }
 
-.aside-contact > figure > img {
+.aside-contact > figure > a > img {
   width: 200px;
   height: 200px;
 }
@@ -188,6 +194,13 @@ input {
 
 @media screen and (max-width: 480px) {
   /* mobiel view */
+  .main-pricing {
+    flex-wrap: wrap;
+  }
+  .artical-wrap {
+    flex-direction: column-reverse;
+  }
+
   video {
     display: none;
   }
@@ -358,8 +371,17 @@ input {
 
 @media screen and (min-width: 1280px) {
   /* computer view */
-  .artical-wrap {
-    max-width: 50%;
+  
+  .Sportinovation1 {
+    max-width: 33%;
+  }
+
+  .Sportinovation2 {
+    max-width: 33%;
+  }
+
+  .Sportinovation3 {
+    max-width: 33%;
   }
 
   video {
@@ -372,10 +394,6 @@ input {
     float: right;
   }
 
-  .artical-wrap {
-    /* display: flex; */
-  }
-
   .list {
     display: none;
   }
@@ -383,11 +401,23 @@ input {
 
 @media screen and (min-width: 480px) and (max-width: 1280px) {
   /* tablet view */
+  .artical-wrap {
+    flex-direction: column-reverse;
+  }
+
   .aside-home {
     display: none;
   }
   .main-products {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-pricing {
+    flex-wrap: wrap;
+  }
+
+  .aside-pricing {
+    justify-content: space-between;
   }
 
   .article4 {
