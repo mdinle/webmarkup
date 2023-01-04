@@ -37,7 +37,9 @@ a:active {
 .main-home {
   display: flex;
   background-color: #ff5733;
+  flex-basis: 30%;
 }
+
 
 .nav-pc {
   display: block;
@@ -371,7 +373,7 @@ input {
   }
 
   .artical-wrap {
-    display: flex;
+    /* display: flex; */
   }
 
   .list {
